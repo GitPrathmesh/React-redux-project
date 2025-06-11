@@ -9,11 +9,11 @@ const userSlice = createSlice({
     name: "user",
     initialState,
     reducers:{
-        loadcart: (state, action) =>{
+        loaduser: (state, action) =>{
             state.user = action.payload;
         }
     }
 })
 
 export default userSlice.reducer;
-export const {loadcart}  = userSlice.actions;
+export const {loaduser}  = userSlice.actions;
